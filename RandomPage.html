@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakuza Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #751f20; 
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        .main-text {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            animation: slideDown 1.5s ease-out forwards;
+        }
+        
+        @keyframes slideDown {
+            0% {
+                top: -100px;
+            }
+            100% {
+                top: 35%; /* Final position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="swordman.png" alt="Man with Sword" class="background-image">
+        <div class="main-text">YAKUZA</div>
+    </div>
+</body>
+</html>
